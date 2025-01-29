@@ -1,8 +1,8 @@
 import mongoose from "mongoose";
 
 
-const user_schema = new mongoose.Schema({
-    name:{
+const admin_schema = new mongoose.Schema({
+    username:{
         type: String,
         required: true,
         trim: true
@@ -15,14 +15,10 @@ const user_schema = new mongoose.Schema({
     password:{
         type: String,
         reqiured: true
-    },
-    phoneNo:{
-        type:String,
-        required: true
     }
 })
 
-const User = mongoose.model('User',user_schema);
-console.log("Model created");
+const Admin = mongoose.model('Admin',admin_schema);
+console.log("Admin Model created");
 
-export default User;
+export default Admin;

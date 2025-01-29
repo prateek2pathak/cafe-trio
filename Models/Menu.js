@@ -16,9 +16,9 @@ const menu_schema = Schema({
     category: {
         type: String,
         required: [true, 'Category is required'],
-        enum: ['Beverages', 'Snacks', 'Meals', 'Desserts'], // Example categories
+        // enum: ['Beverages', 'Snacks', 'Meals', 'Desserts'], // Example categories
     },
-    image: {
+    imageUrl: {
         type: String, // URL for the item's image
         default: '',
     },

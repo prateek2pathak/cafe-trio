@@ -34,7 +34,7 @@ const order_schema = new mongoose.Schema({
         type: Date,
         default: Date.now
     }
-})
+},{ timestamps: true });
 
 const Order = mongoose.model('Order',order_schema);
 console.log("Order Schema Created");
