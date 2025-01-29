@@ -30,6 +30,14 @@ const order_schema = new mongoose.Schema({
         enum: ['Pending','Process','Completed'],
         default: 'Pending'
     },
+    timeToPrepare:{
+        type: Number,
+        default:10
+    },
+    transactionId:{
+        type: String,
+        default:"No Payment"
+    },
     createdAt: {
         type: Date,
         default: Date.now
