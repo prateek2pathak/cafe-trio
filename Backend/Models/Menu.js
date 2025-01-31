@@ -18,9 +18,13 @@ const menu_schema = Schema({
         required: [true, 'Category is required'],
         // enum: ['Beverages', 'Snacks', 'Meals', 'Desserts'], // Example categories
     },
-    imageUrl: {
+    image: {
         type: String, // URL for the item's image
         default: '',
+    },
+    et:{
+        type:Number,
+        default: 10
     },
     availability: {
         type: Boolean,
